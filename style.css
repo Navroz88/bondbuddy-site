@@ -285,3 +285,22 @@ table.compare td:first-child { width: 50%; }
 .sources { font-size: 15px; color: var(--muted); border-top: 1px solid var(--line); margin-top: 48px; padding-top: 10px; }
 .sources li { font-size: 15px; }
 .disclaimer { font-size: 14px; color: var(--muted); }
+
+/* ---------- State chooser ---------- */
+.state-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.state-row a {
+  text-decoration: none; font-weight: 700; font-size: 14px; color: var(--navy);
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px;
+}
+.state-row a:hover { border-color: var(--navy); }
+.state-row a.here { background: var(--navy); color: #fff; border-color: var(--navy); }
+.states-band { padding: 8px 0 0; }
+.states-band .panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; }
+.states-band h2 { font-size: 20px; margin: 0 0 2px; letter-spacing: -0.01em; }
+.states-band p { margin: 0; color: var(--muted); font-size: 15px; }
+.guide-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 26px; }
+.guide-grid a { display: block; text-decoration: none; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+.guide-grid a:hover { border-color: var(--navy); }
+.guide-grid strong { display: block; font-size: 18px; }
+.guide-grid span { color: var(--muted); font-size: 15px; }
+@media (max-width: 600px) { .guide-grid { grid-template-columns: 1fr; } }
